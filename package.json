@@ -1,0 +1,46 @@
+{
+  "name": "awenia-app",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "web:build": "next build",
+    "build": "next build",
+    "start": "next dev",
+    "tauri": "tauri",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "tauri build --bundles nsis",
+    "android:init": "tauri android init",
+    "android:dev": "tauri android dev",
+    "android:apk": "tauri android build -- --apk",
+    "android:aab": "tauri android build -- --aab",
+    "icons": "tauri icon src-tauri/installer/awenia-icon-source.png"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.5.0",
+    "@vercel/analytics": "1.6.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.16.0",
+    "next": "16.3.3",
+    "react": "^19",
+    "react-dom": "^19",
+    "recharts": "^3.10.1",
+    "shadcn": "^4.11.0",
+    "tailwind-merge": "^3.3.1",
+    "tw-animate-css": "^1.4.0",
+    "@tauri-apps/api": "2.11.1",
+    "@tauri-apps/plugin-dialog": "2.7.3",
+    "@tauri-apps/plugin-fs": "2.5.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8.5",
+    "tailwindcss": "^4.3.3",
+    "typescript": "5.7.3",
+    "@tauri-apps/cli": "2.11.4"
+  }
+}
